@@ -1,0 +1,139 @@
+.main-nav {
+  min-height: 50px;
+  width: 100%;
+  margin: 0% auto;
+  border-top: solid 3px #3AB24F;
+  box-shadow: 0px 1px 5px #00000033;
+  position: fixed;
+  z-index: 15;
+  top: 0%;
+  left: 0%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Calibri', sans-serif;
+}
+
+.navbar {
+  height: 100%;
+  min-width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-in-icon {
+  display: none;
+  transition: 0.2s;
+  padding: 5px 6px 3px 6px;
+  border-radius: 50%;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .navbar-1 {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  width: 40%;
+}
+
+.navbar .navbar-2 {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  width: 60%;
+}
+
+.nav-logo {
+  padding: 5px 25px;
+}
+
+.nav-item {
+  font-size: small;
+  font-weight: 500;
+  text-decoration: none;
+  color: #3a3a3a;
+  transition: 0.2s;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.nav-btn {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #3AB24F;
+  color: white;
+  border: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.nav-item:hover,
+.slide-in-icon:hover {
+  background-color: #f1f1f1;
+}
+
+.navbar .navbar-2 form {
+  flex-grow: 1;
+  padding: 0px;
+  position: relative;
+}
+
+.navbar .navbar-2 form input {
+  min-width: 80%;
+  margin: 0;
+  padding: 8px 10px 8px 32px;
+  font-size: 13px;
+  border: solid 1px #0000003e;
+  border-radius: 3px;
+}
+
+.navbar .navbar-2 form .search-icon {
+  position: absolute;
+  left: 25px;
+  top: 8px;
+}
+
+.navbar .navbar-2 div {
+  margin: 0 5px 0 0;
+}
+
+.nav-links {
+  padding: 7px 13px;
+  border: solid 1px #3AB24F;
+  border-radius: 3px;
+  background-color: #3AB24F;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links:hover {
+  background-color: #2E8B43;
+}
+
+@media screen and (min-width: 1600px) {
+  .navbar {
+    min-width: unset;
+    width: 1440px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .navbar .navbar-1 form {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .slide-in-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .navbar .navbar-1 .res-nav {
+    display: none;
+  }
+}

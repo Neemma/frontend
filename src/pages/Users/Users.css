@@ -1,0 +1,37 @@
+.user-list-container {
+  padding: 30px 0px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.leaderboard-table th {
+  background-color: #3AB24F;
+  color: white;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.leaderboard-table td {
+  font-family: 'Calibri', sans-serif;
+}
+
+.user-profile-link {
+  text-decoration: none;
+  color: #3AB24F;
+  transition: 0.3s;
+}
+
+.user-profile-link:hover {
+  color: #2E8B43;
+}
